@@ -1,0 +1,174 @@
+html{
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+ul, ol{
+  list-style: none;
+  padding: 0;
+}
+
+*{
+  font-family: "나눔손글씨 펜"
+}
+
+/* header */
+.header{
+  height: 200px;
+  background-image: linear-gradient(to bottom, transparent 0%, #FFf 100%), url("rururu/forever.png");
+
+  background-position: top;
+  font-family: "나눔손글씨 펜"
+}
+
+
+
+.navbar-brand a{
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.nav-link a{
+  padding-left: 30px;
+  font-size:50px;
+}
+
+/* body */
+.main{
+  margin-bottom: 200px;
+}
+
+.intro{
+  margin-top : 200px;
+}
+
+.post__title {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.detail {
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 2;
+  color: #8d8d8d;
+}
+
+.post__item:nth-child(2n) {
+  text-align: right;
+}
+
+
+/* footer */
+
+.footer{
+  text-align: center;
+  background-color:#FFD8D8;
+  background-size: 100px;
+}
+
+.eunseo__img{
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+  border-radius: 1000000px;
+  margin: auto;
+}
+
+.eunseo__img img{
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.333333;
+  font-family:"나눔손글씨 펜";
+}
+
+.contact{
+  font-size: 1.2rem;
+  font-family: "나눔손글씨 펜";
+}
+
+.copyright{
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #8d8d8d;
+}
+
+
+
+/* card */
+
+.container {
+    width: 200px;
+    height: 260px;
+    position: relative;
+    border: 1px solid #ccc;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card .front {
+  background: red;
+}
+.card .back {
+    background: blue;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+/* 움직 */
+
+
+body, html, .main1 {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
